@@ -8,8 +8,7 @@ of 26 vertices for a graph.
 	
 	-u Specifies that the graph is undirected
 	-o outfile Specifies the file for output, default is stdout
-## Cleaning
-	$ make clean
+
 ## Files
 	graph.py - Contains the program code for the graph ADT and its functions
 
