@@ -4,10 +4,10 @@ Hamiltonian Path for a graph  if it exists. The program accepts a maximum
 of 26 vertices for a graph.
 
 ## Running
-	$ python ./tsp [inputfile] [-u] [-o outputfile]
+	$ python ./tsp [input-file] [-u] [-o output-file]
 	
 	-u Specifies that the graph is undirected
-	-o outputfile Specifies the file for output, default is stdout
+	-o output-file Specifies the file for output, default is stdout
 
 ## Files
 	graph.py - Contains the program code for the graph ADT and its functions
