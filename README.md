@@ -4,15 +4,15 @@ Hamiltonian Path for a graph  if it exists. The program accepts a maximum
 of 26 vertices for a graph.
 
 ## Running
-	$ ./tsp [infile] [-u] [-o outfile]
+	$ python ./tsp [inputfile] [-u] [-o outputfile]
 	
 	-u Specifies that the graph is undirected
-	-o outfile Specifies the file for output, default is stdout
+	-o outputfile Specifies the file for output, default is stdout
 
 ## Files
 	graph.py - Contains the program code for the graph ADT and its functions
 
 	path.py - Contains the program code for the path ADT and its functions
 
-	tsp.py - Contains program code for the dfs and main functions and the solution
+	tsp.py - Contains program code for the DFS and main functions and the solution
 	to the Traveling Salesman Problem
