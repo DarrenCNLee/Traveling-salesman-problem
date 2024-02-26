@@ -39,7 +39,6 @@ def dfs(G, v, curr, shortest, cities, outfile):
 def main():
     infile = open(sys.argv[1], "r")
     outfile = sys.stdout
-   
 
     undirected = False
 
@@ -78,13 +77,13 @@ def main():
 
         if not line:
             break
-        
+
         line = line.split(" ")
 
         if len(line) < 3:
             sys.stderr.write("Error: malformed edge.\n")
             return
-        
+
         i = int(line[0])
         j = int(line[1])
         k = int(line[2])
@@ -100,9 +99,9 @@ def main():
     shortest.path_print(outfile, cities)
     outfile.write("Total recursive calls: " + str(calls) + "\n")
 
-    infile.close() 
+    infile.close()
     outfile.close()
 
 
 if __name__ == "__main__":
-    main() 
+    main()
