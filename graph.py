@@ -35,29 +35,29 @@ class Graph:
         return True
 
     def graph_has_edge(self, i, j):
-        if i < self.vertices and j < self.vertices: 
+        if i < self.vertices and j < self.vertices:
             return self.matrix[i][j]
-        
-        return False 
-    
-    def graph_edge_weight(self, i, j): 
-        if i >= self.vertices or j >= self.vertices: 
-            return 0 
-        return self.matrix[i][j] 
-    
-    def graph_visited(self, v): 
-        return self.visited[v] 
-    
-    def graph_mark_visited(self, v): 
-        if v < self.vertices: 
-            self.visited[v] = True 
-            
-    def graph_mark_unvisited(self, v): 
-        if v < self.vertices: 
-            self.visited[v] = False 
-            
-    def graph_print(self): 
-        for i in range(self.vertices): 
-            for j in range(self.vertices): 
+
+        return False
+
+    def graph_edge_weight(self, i, j):
+        if i >= self.vertices or j >= self.vertices:
+            return 0
+        return self.matrix[i][j]
+
+    def graph_visited(self, v):
+        return self.visited[v]
+
+    def graph_mark_visited(self, v):
+        if v < self.vertices:
+            self.visited[v] = True
+
+    def graph_mark_unvisited(self, v):
+        if v < self.vertices:
+            self.visited[v] = False
+
+    def graph_print(self):
+        for i in range(self.vertices):
+            for j in range(self.vertices):
                 if self.matrix[i][j]:
                     print(i, j, self.matrix[i][j])
